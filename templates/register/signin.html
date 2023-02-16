@@ -1,0 +1,20 @@
+{% extends "users/layout.html" %} {% load socialaccount %} {% block content %}
+<h2>Sign In</h2>
+
+    <form action="/signin/" method="post">
+    {% csrf_token %}    
+        <label form="">Username</label>
+        <input type="text" id="username" name = "username" placeholder="Enter your username (only letters and numbers)" Required>
+        <br>
+
+        
+        <label form="">Password</label>
+        <input type="password" id="pass1" name = "pass1" placeholder="Enter your password" Required>
+        <br>
+
+        
+
+        <button type="submit">SignIn</button>
+    </form>
+    <script src="" async defer></script>
+    {% endblock %}
